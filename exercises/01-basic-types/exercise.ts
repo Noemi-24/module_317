@@ -7,46 +7,49 @@
 // ============================================
 
 // 1. Annotate as a string
-let greeting = "Hello, TypeScript!";
+let greeting: string = "Hello, TypeScript!";
 
 // 2. Annotate as a number
-let age = 25;
+let age: number = 25;
 
 // 3. Annotate as a boolean
-let isStudent = true;
+let isStudent: boolean = true;
 
 // 4. Annotate as an array of numbers
-let scores = [95, 87, 73, 100, 68];
+let scores: number[] = [95, 87, 73, 100, 68];
 
 // 5. Annotate as an array of strings
-let colors = ["red", "green", "blue"];
+let colors: string[] = ["red", "green", "blue"];
 
 // 6. This variable should be a number, but the value is wrong. Fix the value AND add the type.
-let price = "19.99";
+let price: number = 19.99;
 
 // 7. Annotate this tuple: [string, number, boolean]
-let userInfo = ["Alice", 30, true];
+let userInfo: [string, number, boolean]= ["Alice", 30, true];
 
 // 8. Create a variable called `nothing` that is explicitly typed as `null`
-// YOUR CODE HERE
+let nothing: null = null;
 
 // 9. Create a variable called `notSure` typed as `unknown` and assign it the string "mystery"
-// YOUR CODE HERE
+let notSure: unknown = 'mystery';
 
 // 10. Create a variable `coordinates` typed as an array of number tuples [number, number]
 //     and assign it at least 2 coordinate pairs
-// YOUR CODE HERE
+let coordinates: [number, number][] = [
+    [40.7128, -74.0060], // New York City
+    [34.0522, -118.2437] // Los Angeles
+];
 
 // ============================================
 // Verification — uncomment these when done:
 // ============================================
-// console.log("1:", greeting);
-// console.log("2:", age);
-// console.log("3:", isStudent);
-// console.log("4:", scores);
-// console.log("5:", colors);
-// console.log("6:", price);
-// console.log("7:", userInfo);
-// console.log("8:", nothing);
-// console.log("9:", notSure);
-// console.log("10:", coordinates);
+console.log("1:", greeting);
+console.log("2:", age);
+console.log("3:", isStudent);
+console.log("4:", scores);
+console.log("5:", colors);
+console.log("6:", price);
+console.log("7:", userInfo);
+console.log("8:", nothing);
+console.log("9:", notSure);
+console.log("10:", coordinates);
